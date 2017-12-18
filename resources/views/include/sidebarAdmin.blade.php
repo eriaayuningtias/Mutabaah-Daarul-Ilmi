@@ -18,6 +18,12 @@
                             <p>User Profile</p>
                         </a>
                     </li>
+                    <li>
+                        <a class="nav-link" href="./user.html">
+                            <i class="nc-icon nc-circle-09"></i>
+                            <p>tabel</p>
+                        </a>
+                    </li>
                     <li class="nav-item active active-pro">
                         <a class="nav-link active" href="upgrade.html">
                             <i class="nc-icon nc-alien-33"></i>
