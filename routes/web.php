@@ -12,12 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('homer');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/home', 'HomeController@index')->name('rekam_mutabaah');
 
 Auth::routes();
 
