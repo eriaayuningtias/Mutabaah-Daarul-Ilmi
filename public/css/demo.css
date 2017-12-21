@@ -4,3 +4,9 @@
 .text-white{
     color: white;
 }
+.border-right{
+	border-right: 2px dashed green;
+}
+.bg-mutabaah{
+	background-color: #71A922 !important;
+}

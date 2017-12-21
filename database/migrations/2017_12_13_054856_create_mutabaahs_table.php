@@ -24,6 +24,7 @@ class CreateMutabaahsTable extends Migration
             $table->integer('jp_jumlahtatapmuka')->nullable;
             $table->integer('jp_rpp')->nullable;
             $table->integer('jp_lk')->nullable;
+            $table->integer('jp_ppt')->nullable;
             $table->integer('jp_bahanajar')->nullable;
             $table->integer('jp_penilaian')->nullable;
             $table->integer('tilawah');

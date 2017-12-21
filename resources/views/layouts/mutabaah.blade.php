@@ -15,6 +15,9 @@
     <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('/css/light-bootstrap-dashboard.css?v=2.0.1') }}" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="{{ asset('/css/bootstrap-clockpicker.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('/css/clockpicker.css') }}" rel="stylesheet" />
+    <link href="{{ asset('/css/standalone.css') }}" rel="stylesheet" />
     <link href="{{ asset('/css/demo.css') }}" rel="stylesheet" />
 </head>
 
@@ -232,6 +235,13 @@
 <!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
 <script src="{{ asset('js/light-bootstrap-dashboard.js?v=2.0.1') }}" type="text/javascript"></script>
 <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+<script src="{{ asset('js/bootstrap-clockpicker.min.js') }}"></script>
+<script src="{{ asset('js/clockpicker.js') }}"></script>
+
+<script type="text/javascript">
+    $('.clockpicker').clockpicker();
+</script>
+
 <script src="{{ asset('js/demo.js') }}"></script>
 
 </html>
