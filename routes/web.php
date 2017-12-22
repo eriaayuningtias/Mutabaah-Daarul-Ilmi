@@ -15,12 +15,16 @@ Route::get('/', function () {
     return view('homer');
 });
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::post('/home', 'HomeController@index')->name('rekam_mutabaah');
+Route::get('/profile', function () {
+    return view('layouts.profile');
+});
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'MutabaahController@view')->name('home');
+
+Route::post('/home', 'MutabaahController@tambah')->name('rekam_mutabaah');
+
+Auth::routes();
+
+//Route::get('/home', 'HomeController@index')->name('home');
