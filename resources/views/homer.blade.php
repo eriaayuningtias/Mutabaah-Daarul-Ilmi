@@ -42,6 +42,7 @@
 						</div>
 						<div class="col-6 py-1">
 							<select name="jp_jumlahjam">
+								<option value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -59,6 +60,7 @@
 						</div>
 						<div class="col-6 py-1">
 							<select name="jp_jumlahtatapmuka">
+								<option value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -71,6 +73,7 @@
 						</div>
 						<div class="col-6 py-1">
 							<select name="jp_rpp">
+								<option value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -83,6 +86,7 @@
 						</div>
 						<div class="col-6 py-1">
 							<select name="jp_lk">
+								<option value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -95,6 +99,7 @@
 						</div>
 						<div class="col-6 py-1">
 							<select name="jp_ppt">
+								<option value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -107,6 +112,7 @@
 						</div>
 						<div class="col-6 py-1">
 							<select name="jp_bahanajar">
+								<option value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -119,6 +125,7 @@
 						</div>
 						<div class="col-6 py-1">
 							<select name="jp_penilaian">
+								<option value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -132,6 +139,7 @@
 						</div>
 						<div class="col-6 py-1 mt-4 mb-2">
 							<select name="tilawah">
+								<option value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -160,6 +168,7 @@
 						</div>
 						<div class="col-6 py-1 mt-2">
 							<select name="shalat_jamaah">
+								<option value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -357,6 +366,7 @@
 						<div class="col-4">
 							JUMLAH :<br>
 							<select name="rencanapembelajaranberikutnya_jenis">
+								<option value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
