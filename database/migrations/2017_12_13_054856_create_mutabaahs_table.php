@@ -58,9 +58,9 @@ class CreateMutabaahsTable extends Migration
             $table->string('karya_jenis')->nullable;
             $table->integer('lomba_ya');
             $table->string('lomba_jenis')->nullable;
-            $table->integer('rencanapembelajaranberikutnya_ya');
+            $table->string('rencanapembelajaranberikutnya_ya');
             $table->string('rencanapembelajaranberikutnya_jenis')->nullable;
-            $table->integer('rencanapembelajaranberikutnya_validasi')->nullable;
+            $table->string('rencanapembelajaranberikutnya_validasi')->nullable;
 
         });
     }

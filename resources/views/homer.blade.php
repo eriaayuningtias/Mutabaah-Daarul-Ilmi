@@ -10,7 +10,8 @@
 		<h4 class="card-title text-center text-white my-4">FORM MUTABA'AH</h4>
 	</div>
 	<div class="card-body mutabaah px-4 py-4">
-		<form method="POST"  action=" {{ route('rekam_mutabaah') }}">
+		<form method="POST"  action="{{ route('rekam_mutabaah') }}">
+    		{{ csrf_field() }}
 			<div class="row"> <!-- ROW untuk bagi 3 kolom -->
 				<div class="col border-right"> <!-- Kolom Pertama -->
 					<strong> KEHADIRAN : </strong><br> 
@@ -377,10 +378,10 @@
 					</div>
 				</div>
 			</div>
+			<div class="card-footer text-center">
+				<button type="submit" class="btn btn-fill btn-success btn-lg">Rekam</button>
+			</div>
 		</form>		
-	</div>
-	<div class="card-footer text-center">
-		<button type="submit" class="btn btn-fill btn-success btn-lg">Rekam</button>
 	</div>
 </div>
 
