@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/profile', function () {
-    return view('layouts.profile');
+    return view('profile');
 });
 
 Auth::routes();
@@ -28,3 +28,9 @@ Route::post('/home', 'MutabaahController@tambah')->name('rekam_mutabaah');
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
+
+//Admin Page
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function()
+{
+	Route::get('/mutabaah', 'MutabaahController@view')->name('view_mutabaah');
+});

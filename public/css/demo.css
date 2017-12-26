@@ -4,6 +4,9 @@
 .text-white{
     color: white;
 }
+.text-center{
+    text-align: center;
+}
 .border-right{
 	border-right: 2px dashed green;
 }

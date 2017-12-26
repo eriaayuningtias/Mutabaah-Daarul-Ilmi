@@ -19,6 +19,8 @@
     <link href="{{ asset('/css/clockpicker.css') }}" rel="stylesheet" />
     <link href="{{ asset('/css/standalone.css') }}" rel="stylesheet" />
     <link href="{{ asset('/css/demo.css') }}" rel="stylesheet" />
+
+    @yield('push_css')
 </head>
 
 <body>
@@ -82,11 +84,24 @@
                                     <a class="dropdown-item" href="#">Separated link</a>
                                 </div>
                             </li>
+
+                            @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="#pablo">
-                                    <span class="no-icon">Log out</span>
-                                </a>
+                                <a href="{{ route('login') }}">Login</a>
                             </li>
+                            @else
+                            <li class="nav-item">
+                                <a href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                Logout
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </li>
+                            @endguest
                         </ul>
                     </div>
                 </div>
@@ -243,5 +258,7 @@
 </script>
 
 <script src="{{ asset('js/demo.js') }}"></script>
+
+@yield('push_js')
 
 </html>
