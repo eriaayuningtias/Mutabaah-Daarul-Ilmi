@@ -122,9 +122,17 @@
                 <a>SMPIT Daarul 'Ilmi</a>
               </h4>
               <h4>Visi</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+              <p class="card-text">Mewujudkan Lulusan SMIPIT Daarul 'Ilmi Bandar Lampung yang Takwa, Cerdas, Berprestasi, dan Berakhlak Mulia.</p>
               <h4>Misi</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+              <p class="card-text"> 
+                <ul>
+              <li>Membangun pribadi yang cinta kepada Allah, Rasul-Nya, dan gemar beribadah. </li>
+              <li>Membangun pribadi cerdas, terampil, berwawasan, kreatif, dam inovatif. </li>
+              <li>Membangun pribadi kuat, tangguh, dan tahan uji. </li>
+              <li>Menumbuhkan pribadi berprestasi dan siap bersaing di zamannya. </li>
+              <li>Membangun pribadi matang, mandiri, bijaksana, bertanggung jawab terhadap diri sendiri dan ummat.</li></ul>
+                </ul>
+              </p>
             </div>
           </div>
         </div>
@@ -137,9 +145,16 @@
                 <a>SMAIT Daarul 'Ilmi</a>
               </h4>
               <h4>Visi</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+              <p class="card-text">Menyiapkan Calon Pemimpin di Segala Bidang Menyongsong Indonesia Emas 2045.</p>
               <h4>Misi</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+              <p class="card-text"><ul>
+              <li>Mengembangkan kompetensi spiritual, moral, sosial, pengetahuan, keterampilan, dan kesehatan. </li>
+              <li>Menerapkan proses pembelajaran yang efektif, inovatif, kreatif, dan produktif. </li>
+              <li>Memantapkan pembiasaan hidup yang berpegang teguh pada prinsip-prinsip Islam. </li>
+              <li>Menerapkan budaya belajar sepanjang masa dengan daya dukung teknologi informasi dan komunikasi. </li>
+              <li>Mengembangkan minat, bakat, dan jiwa kewirausahaan.</li>
+              <li>Memupuk rasa tanggung jawab terhadap pribadi, keluarga, agama, bangsa dan negara, serta ummat di seluruh dunia.</li></ul>
+                </ul></p>
             </div>
           </div>
         </div>
@@ -168,25 +183,7 @@
       </div>
 
       <!-- Features Section -->
-      <div class="row">
-        <div class="col-lg-6">
-          <h2>Modern Business Features</h2>
-          <p>The Modern Business template by Start Bootstrap includes:</p>
-          <ul>
-            <li>
-              <strong>Bootstrap v4</strong>
-            </li>
-            <li>jQuery</li>
-            <li>Font Awesome</li>
-            <li>Working contact form with validation</li>
-            <li>Unstyled page elements for easy customization</li>
-          </ul>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-        </div>
-        <div class="col-lg-6">
-          <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
-        </div>
-      </div>
+      
       <!-- /.row -->
 
       <hr>
@@ -198,7 +195,7 @@
     <!-- Footer -->
     <footer class="py-2 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Eria Ayu Ningtias 2017</p>
       </div>
       <!-- /.container -->
     </footer>

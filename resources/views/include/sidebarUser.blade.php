@@ -13,9 +13,9 @@
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./user.html">
+                        <a class="nav-link" href="{{ route('view_mutabaah')}}">
                             <i class="nc-icon nc-circle-09"></i>
-                            <p>User Profile</p>
+                            <p>Mutabaah (Admin)</p>
                         </a>
                     </li>
                     <li class="nav-item active active-pro">
