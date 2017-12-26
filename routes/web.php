@@ -33,4 +33,5 @@ Auth::routes();
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function()
 {
 	Route::get('/mutabaah', 'MutabaahController@view')->name('view_mutabaah');
+	Route::get('/anggota', 'AdminController@view_anggota')->name('view_anggota');
 });
