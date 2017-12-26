@@ -6,12 +6,7 @@
                     </a>
                 </div>
                 <ul class="nav">
-                    <li>
-                        <a class="nav-link" href="dashboard.html">
-                            <i class="fa fa-address-card"></i>
-                            <p>Dashboard</p>
-                        </a>
-                    </li>
+                   
                     <li>
                         <a class="nav-link" href="./user.html">
                             <i class="nc-icon nc-circle-09"></i>
@@ -22,6 +17,24 @@
                         <a class="nav-link" href="./user.html">
                             <i class="nc-icon nc-circle-09"></i>
                             <p>tabel</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="dashboard.html">
+                            <i class="fa fa-folder-open-o"></i>
+                            <p>Lihat</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="dashboard.html">
+                            <i class="fa fa-group"></i>
+                            <p>Anggota</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="dashboard.html">
+                            <i class="fa fa-newspaper-o"></i>
+                            <p>Mutabaah Hari Ini</p>
                         </a>
                     </li>
                     <li class="nav-item active active-pro">
