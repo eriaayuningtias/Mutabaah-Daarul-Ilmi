@@ -26,117 +26,151 @@ class DatabaseSeeder extends Seeder
                 'username' => 'user01',
                 'password' => 'user01',
                 'is_admin' => '0',
+            ],
+            [
+            'username' => 'afni',
+            'name' => 'Afni',
+            'password' => bcrypt('123456'),
+            ],
+            [
+                'username' => 'annisa',
+                'name' => 'Annisa Rhaudhatul Jannah',
+                'password' => bcrypt('123456'),
+            ],
+            [
+                'username' => 'arie',
+                'name' => 'Arie Primasari',
+                'password' => bcrypt('123456'),
+            ],
+            [
+                'username' => 'ani',
+                'name' => 'Ani Novitasari',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'desnida',
+                'name' => 'Desnida Sari',
+                'password' => bcrypt('123456'),
+            ],
+            [
+                'username' => 'ema',
+                'name' => 'Ema Yunika',
+                'password' => bcrypt('123456'),
+            ],
+            [
+                'username' => 'idawati',
+                'name' => 'Idawati',
+                'password' => bcrypt('123456'),
+            ],
+            [
+                'username' => 'larasati',
+                'name' => 'Larasati Devi A.',
+                'password' => bcrypt('123456'),
+            ],
+            [
+                'username' => 'neli',
+                'name' => 'Neli Yulina',
+                'password' => bcrypt('123456'),
+            ],
+            [
+                'username' => 'nina',
+                'name' => 'Nina Apriawati',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'jamillah',
+                'name' => 'Jamillah',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'rian',
+                'name' => 'Rian Diasti',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'rizki',
+                'name' => 'Rizki Aditya Putri',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'sifha',
+                'name' => 'Sifha Ni Najmah',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'sitirohmah',
+                'name' => 'Siti Rohman N.H',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'yuni',
+                'name' => 'Yuni Purwanti',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'riana',
+                'name' => 'Riana',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'adun',
+                'name' => 'Adun',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'abrar',
+                'name' => 'Abrar Adzka',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'adi',
+                'name' => 'Adi Setiawan',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'ahmadkhoiri',
+                'name' => 'Ahmad Khoiri',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'andi',
+                'name' => 'Andi Prasetiyo',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'arief',
+                'name' => 'Arief Ageng Sanjaya',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'fadil',
+                'name' => 'Fadilah Makmur A.',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'imam',
+                'name' => 'Imam Purnama',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'kamalian',
+                'name' => 'Kamalian',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'siddiq',
+                'name' => 'Muhammad Siddiq',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'muhammadkhoiri',
+                'name' => 'Muhammad Khoiri',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'rudi',
+                'name' => 'Rudi Hasan',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'suparman',
+                'name' => 'Suparman',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'wiyanda',
+                'name' => 'Wiyanda',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'yuda',
+                'name' => 'Yuda Prasetia',
+                'password' => bcrypt('123456'),
+            ],[
+                'username' => 'yuri',
+                'name' => 'Yuri Pramono',
+                'password' => bcrypt('123456'),
             ]
-        ]);
+            ]);
      //    DB::table('users')->insert([
-     //    [
-     //        'name' => 'afni',
-     //        'password' => bcrypt('123456'),
-     //    ],
-     //    [
-     //        'name' => 'annisa',
-     //        'password' => bcrypt('123456'),
-     //    ],
-     //    [
-     //        'name' => 'arie',
-     //        'password' => bcrypt('123456'),
-     //    ],
-     //    [
-     //        'name' => 'ani',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'desnida',
-     //        'password' => bcrypt('123456'),
-     //    ],
-     //    [
-     //        'name' => 'ema',
-     //        'password' => bcrypt('123456'),
-     //    ],
-     //    [
-     //        'name' => 'idawati',
-     //        'password' => bcrypt('123456'),
-     //    ],
-     //    [
-     //        'name' => 'larasati',
-     //        'password' => bcrypt('123456'),
-     //    ],
-     //    [
-     //        'name' => 'neli',
-     //        'password' => bcrypt('123456'),
-     //    ],
-     //    [
-     //        'name' => 'nina',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'jamillah',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'rian',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'rizki',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'shifa',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'sitirohmah',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'yuni',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'riana',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'adun',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'abrar',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'adi',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'ahmadkhoiri',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'andi',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'arief',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'fadil',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'imam',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'kamalian',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'siddiq',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'muhammadkhoiri',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'rudi',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'suparman',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'wiyanda',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'yuda',
-     //        'password' => bcrypt('123456'),
-     //    ],[
-     //        'name' => 'yuri',
-     //        'password' => bcrypt('123456'),
-     //    ]
+     //    
     	// ]);
     }
 }

@@ -10,7 +10,7 @@
                     <li>
                         <a class="nav-link" href="{{ route('view_mutabaah')}}">
                             <i class="nc-icon nc-circle-09"></i>
-                            <p>Mutabaah (Admin)</p>
+                            <p>Mutabaah (user)</p>
                         </a>
                     </li>
                     <li>
