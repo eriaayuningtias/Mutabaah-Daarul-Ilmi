@@ -229,7 +229,7 @@
 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
 <script src="{{ asset('js/plugins/bootstrap-switch.js') }}"></script>
 <!--  Google Maps Plugin    -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
 <!--  Chartist Plugin  -->
 <script src="{{ asset('js/plugins/chartist.min.js') }}"></script>
 <!--  Notifications Plugin    -->
@@ -239,6 +239,7 @@
 <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
 <script src="{{ asset('js/bootstrap-clockpicker.min.js') }}"></script>
 <script src="{{ asset('js/clockpicker.js') }}"></script>
+<script src="{{ asset('js/sweetalert2.all.js') }}"></script>
 
 <script type="text/javascript">
     $('.clockpicker').clockpicker();

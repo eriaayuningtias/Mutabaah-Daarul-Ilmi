@@ -102,7 +102,7 @@
                                <form id="formAnggota" action="{{route('hapus_anggota')}}" method="post">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="id" value="{{ $anggota->id }}">
-                                <a id="hapusAnggota" class="btn btn-simple btn-danger btn-icon remove btn-lg py-0 px-0">
+                                <a id="hapusAnggota" class="hapusAnggota btn btn-simple btn-danger btn-icon remove btn-lg py-0 px-0">
                                    <i class="fa fa-trash text-danger"></i>
                                </a>
                            </form>
@@ -131,7 +131,7 @@
 </script>
 
 <script type="text/javascript">
-    $('#hapusAnggota').on('click', function(){
+    $('.hapusAnggota').on('click', function(){
       swal({
           title: 'Are you sure?',
           text: "You won't be able to revert this!",
@@ -142,7 +142,7 @@
           confirmButtonText: 'Yes, delete it!'
       }).then((result) => {
         if (result.value) {
-            $("#formAnggota").submit();
+            $(this).closest("form").submit();
         }
     })
   })

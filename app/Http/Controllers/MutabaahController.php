@@ -22,8 +22,17 @@ class MutabaahController extends Controller
     
     public function view()
     {
+        $mutabaahs = User::find(auth()->user()->id)
+                        ->mutabaahs()
+                        ->where('tanggal', '>=', Carbon::today())
+                        ->get();
 
-        return view('mutabaah');
+        if($mutabaahs->isEmpty()){
+            return view('mutabaah');
+        }
+        else{
+            return view('riwayat')->with('mutabaahs', $mutabaahs);
+        }
     }
     
     public function riwayatUser()
