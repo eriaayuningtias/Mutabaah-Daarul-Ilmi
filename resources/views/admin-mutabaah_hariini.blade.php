@@ -5,7 +5,7 @@
 
 @section('push_css')
   <link rel="stylesheet" href="{{ asset('/css/jquery.dataTables.min.css') }}">
-  <link rel="stylesheet" href="{{ asset('/css/buttons.dataTables.min.cs') }}">
+  <link rel="stylesheet" href="{{ asset('/css/buttons.dataTables.min.css') }}">
 @endsection
 
 @section('content')
@@ -20,7 +20,7 @@
         <table class="display" id="riwayatUser" width="100%" cellspacing="0">
           <thead>
             <th>No</th>
-            <th>Tanggal</th>
+            <th>Anggota</th>
             <th>Hadir</th>
             <th>Waktu Hadir</th>
             <th>Waktu Pulang</th>
@@ -71,7 +71,6 @@
             <tr>
               <td>{{ $index + 1 }}</td>
               <td>{{ $mutabaah->user->name }}</td>
-              <td>{{ $mutabaah->created_at->format('H:i:s')}}</td>
               <td>{{ $mutabaah['hadir'] }}</td>
               <td>{{ $mutabaah['jamkerja_hadir'] }}</td>
               <td>{{ $mutabaah['jamkerja_pulang'] }}</td>
