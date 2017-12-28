@@ -79,7 +79,7 @@
 		    <option value="5">5</option>
   		</select><br><br>
 
-  		TILAWAH :
+  		TILAWAH (LEMBAR):
 		 <action="/action_page.php">
   			<select name="tilawah">
 		    <option value="1">1</option>

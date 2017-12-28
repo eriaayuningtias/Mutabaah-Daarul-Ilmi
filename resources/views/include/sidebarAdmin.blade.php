@@ -1,13 +1,18 @@
-<div class="sidebar" data-color="green" data-image="{{ URL::asset('img/sidebar-3.jpg') }}">
+<div class="sidebar" data-color="green" data-image="{{ URL::asset('img/sidebar-5.jpg') }}">
     <div class="sidebar-wrapper">
                 <div class="logo">
-                    <a href="http://www.creative-tim.com" class="simple-text">
+                    <a href="/" class="simple-text">
                         MUTABA'AH GURU DAARUL 'ILMI
                     </a>
                 </div>
                 <ul class="nav">
                    
-                    
+                    <li>
+                        <a class="nav-link" href="/">
+                            <i class="nc-icon nc-bank"></i>
+                            <p>Beranda</p>
+                        </a>
+                    </li>
                     <li>
                         <a class="nav-link" href="{{route('view_anggota')}}">
                             <i class="fa fa-address-card-o"></i>

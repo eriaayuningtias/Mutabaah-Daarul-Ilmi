@@ -21,50 +21,50 @@
           <thead>
             <th>No</th>
             <th>Tanggal</th>
-            <th>hadir</th>
-            <th>jamkerja_hadir</th>
-            <th>jamkerja_pulang</th>
-            <th>jp_jumlahjam</th>
-            <th>jp_jumlahtatapmuka</th>
-            <th>jp_rpp</th>
-            <th>jp_lk</th>
-            <th>jp_ppt</th>
-            <th>jp_bahanajar</th>
-            <th>jp_penilaian</th>
-            <th>tilawah</th>
-            <th>subuh_jamaah</th>
-            <th>shalat_jamaah</th>
-            <th>almatsurat</th>
-            <th>shalat_dhuha</th>
-            <th>qiyamulail</th>
-            <th>puasa_sunnah</th>
-            <th>liqo</th>
-            <th>olahraga_ya</th>
-            <th>olahraga_waktu</th>
-            <th>upacara_ya</th>
-            <th>upacara_keterangan</th>
-            <th>mgmp</th>
-            <th>membinahalaqoh_ya</th>
-            <th>membinahalaqoh_waktu</th>
-            <th>rapat_ya</th>
-            <th>rapat_jenis</th>
-            <th>homevisit_ya</th>
-            <th>homevisit_jenis</th>
-            <th>mengisiacara_ya</th>
-            <th>mengisiacara_jenis</th>
-            <th>pelatihan_ya</th>
-            <th>pelatihan_jenis</th>
-            <th>supervisi</th>
-            <th>kultum_di_sekolah</th>
-            <th>isi_website</th>
-            <th>bagikan_medsos</th>
-            <th>karya_ya</th>
-            <th>karya_jenis</th>
-            <th>lomba_ya</th>
-            <th>lomba_jenis</th>
-            <th>rencanapembelajaranberikutnya_ya</th>
-            <th>rencanapembelajaranberikutnya_jenis</th>
-            <th>rencanapembelajaranberikutnya_validasi</th>
+            <th>Hadir</th>
+            <th>Waktu Hadir</th>
+            <th>Waktu Pulang</th>
+            <th>Jumlah Jam Mengajar</th>
+            <th>Jumlah Tatap Muka</th>
+            <th>RPP</th>
+            <th>LK</th>
+            <th>PPT</th>
+            <th>Bahan Ajar</th>
+            <th>Penilian</th>
+            <th>Tilawah</th>
+            <th>Subuh Jamaah</th>
+            <th>Shalat Jamaah</th>
+            <th>Almatsurat</th>
+            <th>Shalat Dhuha</th>
+            <th>Qiyamulail</th>
+            <th>Puasa Sunnah</th>
+            <th>Liqo</th>
+            <th>Olahraga</th>
+            <th>Jam Olahraga</th>
+            <th>Upacara</th>
+            <th>Keterangan Upacara</th>
+            <th>MGMP</th>
+            <th>Membina Halaqoh</th>
+            <th>Waktu Membinahalaqoh</th>
+            <th>Rapat</th>
+            <th>Jenis Rapat</th>
+            <th>Home Visit</th>
+            <th>Jenis Home Visit</th>
+            <th>Mengisi Acara</th>
+            <th>Jenis Mengisi Acara</th>
+            <th>Pelatihan</th>
+            <th>Jenis Pelatihan</th>
+            <th>Supervisi</th>
+            <th>Kultum di Sekolah</th>
+            <th>Isi Website</th>
+            <th>Bagikan Medsos</th>
+            <th>Karya</th>
+            <th>Jenis Karya</th>
+            <th>Lomba</th>
+            <th>Jenis Lomba</th>
+            <th>Rencana Pembelajaran Berikutnya</th>
+            <th>Jenis Rencana</th>
+            <th>Validasi Rencana</th>
           </thead>
           <tbody>
             @foreach ($mutabaahs as $index => $mutabaah)

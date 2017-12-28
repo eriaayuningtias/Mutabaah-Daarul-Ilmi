@@ -87,7 +87,7 @@
 </div>
 <!-- /.row -->
 
-<div class="row py-4 px-4">
+<!-- <div class="row py-4 px-4">
 	<div class="col main-content py-4 px-4">
 		<h1 class="text-center mb-5"> Welcome to Lorem Ipsum </h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -106,7 +106,7 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</p>
 	</div>
-</div>
+</div> -->
 
 @endsection
 

@@ -90,7 +90,7 @@
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('{{ asset('/img/sekolah2.jpg') }}');">
+          <div class="carousel-item" style="background-image: url('{{ asset('/img/sekolah3.jpg') }}');">
             <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
