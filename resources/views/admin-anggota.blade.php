@@ -3,8 +3,8 @@
 @section('title', 'Anggota')
 
 @section('push_css')
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
-  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css">
+    <link href="{{ asset('/css/jquery.dataTables.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('/css/buttons.dataTables.min.css') }}" rel="stylesheet" />
 @endsection
 
 @section('content')

@@ -4,8 +4,8 @@
 
 
 @section('push_css')
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
-  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css">
+  <link rel="stylesheet" href="{{ asset('/css/jquery.dataTables.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('/css/buttons.dataTables.min.cs') }}">
 @endsection
 
 @section('content')
@@ -132,10 +132,10 @@
 <!-- jQuery -->
 <!-- <script src="{{ asset('js/jquery-1.12.4.js') }}" type="text/javascript"></script> -->
 <script src="{{ asset('js/jquery.dataTables.min.js') }}" type="text/javascript"></script>
-<script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js" type="text/javascript"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js" type="text/javascript"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js" type="text/javascript"></script>
-<script src="//cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js" type="text/javascript"></script>
+<script src="{{ asset('js/dataTables.buttons.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/jszip.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/vfs_fonts.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/buttons.html5.min.js') }}" type="text/javascript"></script>
 
 <script type="text/javascript">
   $(document).ready(function() {
