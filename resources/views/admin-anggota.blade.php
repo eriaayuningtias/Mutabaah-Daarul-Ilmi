@@ -1,56 +1,53 @@
 @extends('layouts.mutabaah')
 
-@section('title', 'Home')
+@section('title', 'Anggota')
 
+@section('push_css')
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css">
+@endsection
 
 @section('content')
 
 <div class="row">
     <div class="col-md-12">
         <div class="card">
-            <div class="header">
-                <h4 class="title">Tambah Data Dosen</h4>
+            <div class="card-header ">
+                <h4 class="card-title">Tambah Anggota</h4>
+                <p class="card-category">Tambah Anggota Mutabaah</p>
             </div>
-            <div class="content">
-                <form action="{{ route('register') }}" method="post">
+            <div class="card-body ">
+                <form action="{{ route('tambah_anggota') }}" method="post">
                     {{ csrf_field() }}
                     <div class="form-horizontal">
                         <div class="row">
-                            <div class="col-md-5  col-xs-12">
+                            <div class="col-md-4 col-xs-12">
                                 <div class="form-group">
-                            		<label for="name" class="col-md-4 control-label">Nama</label>
-                            		<div class="col-md-6">
+                            		<!-- <label for="name" class="col-md-4 control-label">Nama</label> -->
+                            		<div class="col-md-12">
                             			<input id="name" type="text" class="form-control" placeholder="Nama ..." name="name" required>
                             		</div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-3 col-xs-12">
                                 <div class="form-group">
-                            		<label for="username" class="col-md-4 control-label">Username </label>
-                            		<div class="col-md-6">
+                            		<!-- <label for="username" class="col-md-4 control-label">Username </label> -->
+                            		<div class="col-md-12">
                             			<input id="username" type="text" class="form-control" placeholder="Username ..." name="username" required>
                             		</div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-3 col-xs-12">
                                 <div class="form-group">
-                            		<label for="password" class="col-md-4 control-label">Password</label>
-                            		<div class="col-md-6">
+                            		<!-- <label for="password" class="col-md-4 control-label">Password</label> -->
+                            		<div class="col-md-12">
                             			<input id="password" type="text" class="form-control" placeholder="Password ..." name="password" required>
                             		</div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                            		<label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
-                            		<div class="col-md-6">
-                            			<input id="password_confirmation" type="text" class="form-control" placeholder="NIP ..." name="password_confirmation" required>
-                            		</div>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-md-offset-1  col-xs-12">
-                                <div class="form-group  ">
-                                    <button type="submit" class="btn btn-info">Tambah</button>
+                            <div class="col-md-2 col-xs-12">
+                                <div class="form-group text-right">
+                                    <button type="submit" class="btn btn-info"><strong>Tambah</strong></button>
                                 </div>
                             </div>
                         </div> 
@@ -62,38 +59,52 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        <div class="card">
-            <div class="header">
-                <h4 class="title">Daftar Anggota</h4>
-                <p class="category">lorem ipsum</p>
+        <div class="card strpied-tabled-with-hover">
+            <div class="card-header ">
+                <h4 class="card-title">Daftar Anggota</h4>
+                <p class="card-category">Anggota terdaftar dalam sistem</p>
             </div>
-            <div class="content table-responsive table-full-width">
-                <table class="table table-hover table-striped">
+            <div class="card-body table-full-width table-responsive">
+                <table class="display" id="tabel_anggota"  width="100%" cellspacing="0">
                     <thead>
+                        <th>No</th>
                         <th>Nama</th>
                         <th>Username</th>
-                        <th>Password</th>
+                        <th>Lihat Mutabaah</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
                     </thead>
                     <tbody>
-                        @foreach ($anggotas as $anggota)
+                        @foreach ($anggotas as $index => $anggota)
                         <tr>
-                            <td>{{ $anggota->name }}</td>
-                            <td>{{ $anggota->username }}</td>
-                            <td>{{ $anggota->password }}</td>
+                            <td>{{ $index + 1 }}</td>
+                            <td>{{ $anggota['name'] }}</td>
+                            <td>{{ $anggota['username'] }}</td>
                             <td>
-                                <form action="" method="post">
+                                <form action="{{route('riwayat_anggota')}}" method="post">
                                     {{ csrf_field() }}
                                     <input type="hidden" name="id" value="{{ $anggota->id }}">
-                                    <button type="submit" class="btn btn-simple btn-warning btn-icon remove btn-xs">
-                                       <i class="fa fa-edit"></i></a>
+                                    <button type="submit" class="btn btn-info">
+                                       Lihat Mutabaah
                                    </button>
                                </form>
-                               <form action="" method="post">
+                            </td>
+                            <td>
+                                <form action="{{route('edit_anggota')}}" method="post">
+                                    {{ csrf_field() }}
+                                    <input type="hidden" name="id" value="{{ $anggota->id }}">
+                                    <button type="submit" class="btn btn-simple btn-warning btn-icon remove btn-lg py-0 px-0">
+                                       <i class="fa fa-edit"></i>
+                                   </button>
+                               </form>
+                           </td>
+                           <td>
+                               <form id="formAnggota" action="{{route('hapus_anggota')}}" method="post">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="id" value="{{ $anggota->id }}">
-                                <button type="submit" class="btn btn-simple btn-danger btn-icon remove btn-xs">
-                                   <i class="fa fa-times"></i></a>
-                               </button>
+                                <a id="hapusAnggota" class="btn btn-simple btn-danger btn-icon remove btn-lg py-0 px-0">
+                                   <i class="fa fa-trash text-danger"></i>
+                               </a>
                            </form>
                        </td>
                    </tr>
@@ -106,4 +117,34 @@
 </div>
 </div>
 
+@endsection
+
+@section('push_js')
+<script src="{{ asset('js/jquery.dataTables.min.js') }}" type="text/javascript"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#tabel_anggota').DataTable({
+      "scrollX": true
+    } );
+} );
+</script>
+
+<script type="text/javascript">
+    $('#hapusAnggota').on('click', function(){
+      swal({
+          title: 'Are you sure?',
+          text: "You won't be able to revert this!",
+          type: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Yes, delete it!'
+      }).then((result) => {
+        if (result.value) {
+            $("#formAnggota").submit();
+        }
+    })
+  })
+</script>
 @endsection

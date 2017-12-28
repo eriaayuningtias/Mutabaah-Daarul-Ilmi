@@ -1,8 +1,12 @@
+
 .mutabaah{
     font-size: 14px;
 }
 .text-white{
     color: white;
+}
+.text-black{
+  color: black;
 }
 .text-center{
     text-align: center;
@@ -12,16 +16,6 @@
 }
 .bg-mutabaah{
 	background-color: #71A922 !important;
-
-
-body {
-  padding-top: 54px;
-}
-
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
 }
 
 .carousel-item {
@@ -36,4 +30,7 @@ body {
 
 .portfolio-item {
   margin-bottom: 30px;
+}
+.bg-green {
+  background: rgb(5, 81, 8) !important;
 }

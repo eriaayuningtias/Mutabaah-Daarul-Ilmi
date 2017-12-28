@@ -25,19 +25,27 @@
 
 <body>
     <div class="wrapper">
+        @guest
             @include('include.sidebarUser')
+        @else
+            @if(Auth::user()->is_admin == 0)
+                @include('include.sidebarUser')
+            @else
+                @include('include.sidebarAdmin')
+            @endif
+        @endguest
         <div class="main-panel">
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg " color-on-scroll="500">
                 <div class=" container-fluid  ">
-                    <a class="navbar-brand" href="#pablo"> Table List </a>
+                    <!-- <a class="navbar-brand" href="#pablo"> Table List </a> -->
                     <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar burger-lines"></span>
                         <span class="navbar-toggler-bar burger-lines"></span>
                         <span class="navbar-toggler-bar burger-lines"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navigation">
-                        <ul class="nav navbar-nav mr-auto">
+                       <!--  <ul class="nav navbar-nav mr-auto">
                             <li class="nav-item">
                                 <a href="#" class="nav-link" data-toggle="dropdown">
                                     <i class="nc-icon nc-palette"></i>
@@ -64,9 +72,9 @@
                                     <span class="d-lg-block">&nbsp;Search</span>
                                 </a>
                             </li>
-                        </ul>
+                        </ul> -->
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="#pablo">
                                     <span class="no-icon">Account</span>
                                 </a>
@@ -83,7 +91,7 @@
                                     <div class="divider"></div>
                                     <a class="dropdown-item" href="#">Separated link</a>
                                 </div>
-                            </li>
+                            </li> -->
 
                             @guest
                             <li class="nav-item">
@@ -110,10 +118,8 @@
 
             <!-- Content -->
             <div class="content">
-                <div class="container">
-                    <div class="row">
+                <div class="container-fluid">
                         @yield('content')
-                    </div>
                 </div>
             </div>
             <!-- End Content -->

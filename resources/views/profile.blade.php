@@ -42,11 +42,11 @@
 <div class="row">
 	<div class="col-lg-6 col-sm-6 portfolio-item">
 		<div class="card h-100">
-
+			<div class="card-header">
+				<h4 class="card-title">SMPIT Daarul 'Ilmi</h4>
+		<!-- 		<p class="card-category">lorem ipsum</p> -->
+			</div>
 			<div class="card-body">
-				<h4 class="card-title">
-					<a>SMPIT Daarul 'Ilmi</a>
-				</h4>
 				<h4>Visi</h4>
 				<p class="card-text">Mewujudkan Lulusan SMIPIT Daarul 'Ilmi Bandar Lampung yang Takwa, Cerdas, Berprestasi, dan Berakhlak Mulia.</p>
 				<h4>Misi</h4>

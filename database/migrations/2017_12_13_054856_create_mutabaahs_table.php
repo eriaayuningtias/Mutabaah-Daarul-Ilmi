@@ -16,6 +16,7 @@ class CreateMutabaahsTable extends Migration
         Schema::create('mutabaahs', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->integer('user_id');
             $table->date('tanggal');
             $table->integer('hadir');
             $table->string('jamkerja_hadir')->nullable;

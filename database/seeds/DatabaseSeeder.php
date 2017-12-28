@@ -18,13 +18,13 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'admin01',
                 'username' => 'admin01',
-                'password' => 'admin01',
+                'password' => bcrypt('admin01'),
                 'is_admin' => '1',
             ],
             [
                 'name' => 'user01',
                 'username' => 'user01',
-                'password' => 'user01',
+                'password' => bcrypt('user01'),
                 'is_admin' => '0',
             ],
             [

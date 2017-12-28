@@ -5,21 +5,47 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\mutabaah;
 use Carbon\Carbon;
+use App\User;
+use Yajra\Datatables\Datatables;
 
 class MutabaahController extends Controller
 {    
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function view()
     {
 
-        return view('homer');
+        return view('mutabaah');
     }
+    
+    public function riwayatUser()
+    {
+        $mutabaahs = User::find(auth()->user()->id)
+                        ->mutabaahs()
+                        ->orderBy('tanggal', 'desc')
+                        ->get();
+
+        return view('riwayat')->with('mutabaahs', $mutabaahs);
+
+        // return Datatables::of($mutabaahs)->make(true);
+    }
+
 
     public function tambah()
     {
     	$request = request();
         $mutabaah = new mutabaah;
 
-        $mutabaah->tanggal 								= Carbon::now();
+        $mutabaah->user_id                                 = auth()->user()->id;
+        $mutabaah->tanggal 								    = Carbon::now();
         $mutabaah->hadir 									= $request->hadir;
         $mutabaah->jamkerja_hadir 							= $request->jamkerja_hadir;
         $mutabaah->jamkerja_pulang 							= $request->jamkerja_pulang;

@@ -4,6 +4,7 @@
 
 
 @section('content')
+@if (date('H:i:s') >= '06:00:00' && date('H:i:s') <= '16:00:00')
 
 <div class="card stacked-form">
 	<div class="card-header bg-mutabaah">
@@ -22,17 +23,17 @@
 						<div class="col-6 py-1 pl-3">
 							Hadir Pukul :
 						</div>
-						<div class="col-6 py-1 pl-3">
+						<div class="col-6 py-1 ">
 							<div class="clockpicker" data-placement="bottom" data-align="top" data-autoclose="true">
-								<input type="text" value="07:00" name="jamkerja_hadir">
+								<input type="text" value="00:00" name="jamkerja_hadir">
 							</div>
 						</div>
 						<div class="col-6 py-1 pl-3">
 							Pulang Pukul :
 						</div>
-						<div class="col-6 py-1 pl-3">
+						<div class="col-6 py-1 ">
 							<div class="clockpicker" data-placement="bottom" data-align="top" data-autoclose="true">
-								<input type="text" value="16:00" name="jamkerja_pulang">
+								<input type="text" value="00:00" name="jamkerja_pulang">
 							</div>
 						</div><br>
 						<div class="col-12">
@@ -394,5 +395,13 @@
 		</form>		
 	</div>
 </div>
-
+@else
+<div class="row">
+	<div class="col">
+		<h2 class="text-center text-gray500">
+			Maaf, Waktu Mengisi Telah Habis
+		</h2>
+	</div>
+</div>
+@endif
 @endsection
